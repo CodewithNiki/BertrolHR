@@ -25,10 +25,10 @@ export default function Home() {
     return (
       <div
         key={index}
-        className=" w-80 border border-blue-900 p-6 rounded-lg transform transition-transform ease-in-out hover:scale-105 hover:shadow-2xl bg-blue-5 shadow-gray-400 shadow-inner"
+        className=" w-80 border border-blue-900 p-3 md:p-6 rounded-lg transform transition-transform ease-in-out hover:scale-105 hover:shadow-2xl bg-blue-5 shadow-gray-400 shadow-inner"
       >
-        <h4 className="font-bold text-blue-700 text-base mb-4">{card.title}</h4>
-        <p className="text-center text-sm leading-6">{card.text}</p>
+        <h4 className="font-bold text-blue-800 text-base mb-1 md:mb-4">{card.title}</h4>
+        <p className="text-center text-sm leading-6 font-normal">{card.text}</p>
       </div>
     );
   });
@@ -47,9 +47,9 @@ export default function Home() {
             Learn More
           </button>
         </div>
-        <div className=" py-10 xl:px-24 px-16 text-3xl lg:text-4xl font-bold text-center text-black">
+        <div className=" py-5 md:py-10 px-16 text-2xl md:text-3xl lg:text-4xl md:font-bold font-semibold text-center text-black">
           What we do
-          <div className=" 2xl:w-4/5 mx-auto flex justify-evenly flex-wrap gap-10 mt-10">{renderedCards}</div>
+          <div className=" 2xl:w-4/5 mx-auto flex justify-evenly flex-wrap gap-10 mt-5 md:mt-10">{renderedCards}</div>
         </div>
       </div>
     </main>
